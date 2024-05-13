@@ -1,68 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Club Tercera Edad</title>
+  
 </head>
 <body>
-    
-    <ul>
-        <li><a href="/pages/form1.html">Formulario 1</a></li>
-        <li><a href="/pages/form2.html">Formulario 2</a></li>
-        <li><a href="/pages/form3.html">Formulario 3</a></li>
-        <li><a href="/pages/form4.html">Formulario 4</a></li>
-        <li><a href="/pages/form5.html">Formulario 5</a></li>
-    </ul>       
-
-    <form>
-        <div><h3>Club de la tercera edad 👵🏻</h3></div><br>
-
-        <label for="fname">Nombre</label><br>
-        <input type="text" id="fname" name="fname"><br>
-
-        <label for="lname">Apellidos</label><br>
-        <input type="text" id="lname" name="lname"><br>
-
-        <label for="ageUser">Edad</label><br>
-        <input type="number"  id="ageUser" name="ageUser"><br><br>
-
-        <input type="radio" id="male" name="SexType">
-        <label for="male">Masculino</label>
-
-        <input type="radio" id="female" name="SexType">
-        <label for="female">Femenino</label><br><br>
-
-        <label >¿Te sientes viejuner?</label>
-        <label for="isViejuner">Si</label>
-        <input type="checkbox" id="isViejuner" name="isViejuner" value="Si">
-
-        <label for="isViejuner">No</label>
-        <input type="checkbox" id="isViejuner" name="isViejuner" value="NO"> <br><br>
-
-        <label for="fname">Escribe algo sobre ti</label><br>
-        <textarea name="mensaje" rows="11" cols="16"></textarea>
-
-
-
-
-
-
-
-
-    </form>
-
-    <form>
-        <div><h3>Club de la policia👮🏻 </h3></div>
+        <nav>
+            <ul align="right">
+                <li style="display:inline"><a href="/index.html">Inicio</a></li>
+                <li style="display:inline"><a href="/pages/form1.html">Formulario 1</a></li>
+                <li style="display:inline"><a href="/pages/form2.html">Formulario 2</a></li>
+                <li style="display:inline"><a href="/pages/form3.html">Formulario 3</a></li>
+                <li style="display:inline"><a href="/pages/form4.html">Formulario 4</a></li>
+                <li style="display:inline"><a href="/pages/form5.html">Formulario 5</a></li>
+            </ul>
+        </nav>      
+            
         
+        <div align="center">
+                
+             <div style=" background-color: rgb(251, 251, 244);">
+              
+                <form>
+
+                    <fieldset align="center"> 
+                        <legend ><div><h3>Club de la tercera edad  👵🏻</h3></div></legend><br>
+
+                        <label for="fname">Nombre</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Escribe tu nombre"><br><br>
+                        
+                        <label for="lname">Apellidos</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Escribe tu apellido"><br><br>
+                        
+                        <label for="ageUser">Edad</label><br><br>
+                        <input type="number"  id="ageUser" name="ageUser" placeholder="Escribe tu edad" ><br><br>
+                        
+                        <label for="sexType">Sexo</label><br><br>
+                        <input type="radio" id="male" name="sexType">
+                        <label for="male">Masculino</label>
+                        
+                        <input type="radio" id="female" name="SexType">
+                        <label for="female">Femenino</label><br><br>
+                        
+                        <label >¿Te sientes viejuner?</label>
+                        <label for="isViejuner">Si</label>
+                        <input type="checkbox" id="isViejuner" name="isViejuner" value="Si">
+                        
+                        <label for="isViejuner">No</label>
+                        <input type="checkbox" id="isViejuner" name="isViejuner" value="NO"> <br><br>
+                        
+                        <label for="fname">Escribe algo sobre ti</label><br>
+                        <textarea name="mensaje" rows="10" cols="25" placeholder="Escribe algo que quieras que sepamos de ti " ></textarea>
+                        <br>
+                        <br>
+                        
+                        <label for="userEmail">Correo electronico</label><br>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="usuario@gmail.com"><br>
+                        <label for="userPhone">Telefono</label><br>
+                        <input type="tel" id="userPhone" name="userPhone" placeholder="678 912 345"><br><br>
+                
+                    </fieldset>    
+                </form>
+            </div> 
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
+        <div align="center" >
 
+            <div style=" background-color: rgb(217, 237, 246);"> 
+                <form>        
+                    <fieldset align="center"> 
+                        <legend > 
+                            <div >
+                                <h3>Policia: Robos de Bicicleta 👮🏻‍♀️ </h3>
+                            </div>
+                        </legend><br>
+                        <div align="center">   
+                            <label for="dateOfTheft"> Fecha:</label>
+                            <input type="date" id="dateOfTheft" name="dateOfTheft" value="2024-05-13" max="2024-05-13">
+                            </input><br><br>
+                
+                            <label for="timeTheft">Hora:
+                            </label>
+                            <input type="time" id="timeTheft" ><br><br>
+                    
+                            
+                            <label for="coloUserBike">Color de la bicicleta</label><br><br>
+                            <input type="color"  id="userUserBike" name="userUserBike"><br><br>
+                            
+                            <label for="male">Rango de precio</label><br>
+                            <input type="range" id="priceRange" name="SexType"><br>
+                            <span>Desde 0€ </span> <span>Hasta 14.000</span><br><br>
+                            
+                            <label for="modelBike">
+                                Tipo de bicicleta
+                            </label><br><br>
+                                <select id="modelBike" name="modelBike">
+                                        <option value="" disabled selected>Selecciona un tipo</option>
+                                            <optgroup label="Bicletas de Paseo">
+                                            <option value="señorial">Señorial</option>
+                                            <option value="anti-plebeyos">Anti-plebeyos</option>
+                                            <option value="por-encima-del-hombro">Por Encima del Hombro</option>
+                                        </optgroup>
+                                        <optgroup label="Montaña">
+                                            <option value="gamusinos">Gamusinos</option>
+                                            <option value="hueleflores-premium">Hueleflores Premium</option>
+                                            <option value="fango-lover">Fango Lover</option>
+                                        </optgroup>
+                                        <optgroup label="Bicicletas de Carreras">
+                                            <option value="metroymedio">Metroymedio</option>
+                                            <option value="3-de-la-tarde">3 de la Tarde (Fluorescente Edition)</option>
+                                            <option value="grupitors">Grupitors</option>
+                                        </optgroup>
+                                </select>
+                            <br>
+                            <br>
 
-
-
-    </form>
-    
+                            <label for="accesorios">Accesorios:</label><br>
+                                <select id="accesorios" name="accesorios" multiple>
+                                    <option value="ruedines">Ruedines</option>
+                                    <option value="pegatinas">Pegatinas</option>
+                                    <option value="cestita">Cestita</option>
+                                    <option value="bomba-de-aire">Bomba de Aire</option>
+                                    <option value="timbre">Timbre</option>
+                                    <option value="foco">Foco</option>
+                                </select>
+                            <br>
+                            <br>
+                            <label for="bikeBrand">¿Qué marca era?</label>
+                            <br>
+                                <select id="bikeBrand" name="bikeBrand">
+                                <option value="">Selecciona una marca</option>
+                                <option value="specialized">Specialized</option>
+                                <option value="trek">Trek</option>
+                                <option value="merida">Merida</option>
+                                <option value="scott">Scott</option>
+                                <option value="giant">Giant</option>
+                                <option value="cube">Cube</option>
+                                </select>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                        </div>
+                    </fieldset>    
+                    <br>
+                </form>
+            </div>
+        </div>
+  
 </body>
 </html>
